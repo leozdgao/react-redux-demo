@@ -1,5 +1,6 @@
 import React, { Component, PropTypes as T } from 'react'
 import { Link } from 'react-router'
+import './style.scss'
 
 class App extends Component {
   render () {

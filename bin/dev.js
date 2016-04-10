@@ -13,7 +13,6 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
     chunks: false
   }
 })
-
 var hotMiddleware = require('webpack-hot-middleware')(compiler)
 // force page reload when html-webpack-plugin template changes
 compiler.plugin('compilation', function (compilation) {
@@ -22,8 +21,8 @@ compiler.plugin('compilation', function (compilation) {
     cb()
   })
 })
-// app.use('/api', require('json-server').router(path.join(__dirname, '../api/data.json')))
 
+app.use('/api', require('json-server').router(path.join(__dirname, '../api/db.json')))
 // handle fallback for HTML5 history API
 app.use(require('connect-history-api-fallback')())
 // serve webpack bundle output

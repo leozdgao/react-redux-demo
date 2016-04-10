@@ -1,0 +1,79 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "RPoole",
+      "motto": "sed dolor sagittis malesuada vestibulum"
+    },
+    {
+      "id": 2,
+      "username": "KLavallee",
+      "motto": "vestibulum odio et sollicitudin massa"
+    },
+    {
+      "id": 3,
+      "username": "SVasquez",
+      "motto": "egestas elementum vestibulum dolor etiam"
+    },
+    {
+      "id": 4,
+      "username": "AWaters",
+      "motto": "sollicitudin tortor magna et in"
+    },
+    {
+      "id": 5,
+      "username": "BLoria",
+      "motto": "porta eros suspendisse sed et"
+    },
+    {
+      "id": 6,
+      "username": "LReimer",
+      "motto": "ipsum magna velit suspendisse suspendisse"
+    },
+    {
+      "id": 7,
+      "username": "EWeissmann",
+      "motto": "tincidunt aenean dolor sagittis vel"
+    },
+    {
+      "id": 8,
+      "username": "GUhl",
+      "motto": "orci eros consequat pulvinar amet"
+    },
+    {
+      "id": 9,
+      "username": "KKubota",
+      "motto": "ipsum dui pulvinar massa sapien"
+    },
+    {
+      "id": 10,
+      "username": "TBrestar",
+      "motto": "nec ac ipsum tellus molestie"
+    },
+    {
+      "id": 11,
+      "username": "SHarris",
+      "motto": "molestie eros nec facilisis nunc"
+    },
+    {
+      "id": 12,
+      "username": "MKarneol",
+      "motto": "donec scelerisque aliquam dui massa"
+    },
+    {
+      "id": 13,
+      "username": "GAbdurrahman",
+      "motto": "tincidunt vestibulum at libero sapien"
+    },
+    {
+      "id": 14,
+      "username": "AStrobel",
+      "motto": "lacus vestibulum libero sapien velit"
+    },
+    {
+      "id": 15,
+      "username": "SParker",
+      "motto": "odio amet id ac rutrum"
+    }
+  ]
+}

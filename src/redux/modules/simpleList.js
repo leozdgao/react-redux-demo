@@ -77,3 +77,49 @@ export function endEdit (i) {
     payload: { i }
   }
 }
+
+// import { createAction, handleActions } from 'redux-actions'
+
+// export const addEntry = createAction(ADD_ENTRY, entry => ({ entry }))
+// export const editEntry = createAction(EDIT_ENTRY, (i, entry) => ({ i, entry }))
+// export const removeEntry = createAction(REMOVE_ENTRY, i => ({ i }))
+// export const startEdit = createAction(START_EDIT, i => ({ i }))
+// export const endEdit = createAction(END_EDIT, i => ({ i }))
+//
+// export default handleActions({
+//   [ADD_ENTRY]: (state, { payload = {} }) => {
+//     const { entry } = payload
+//     if (entry) {
+//       return [
+//         ...state,
+//         { entry, editing: false }
+//       ]
+//     }
+//     else return state
+//   },
+//   [START_EDIT]: (state, { payload = {} }) => {
+//     const { i } = payload
+//     return state.map((oldEntry, index) => {
+//       if (index === i) return { entry: oldEntry.entry, editing: true }
+//       else return oldEntry
+//     })
+//   },
+//   [EDIT_ENTRY]: (state, { payload = {} }) => {
+//     const { entry, i } = payload
+//     return state.map((oldEntry, index) => {
+//       if (index === i) return { entry, editing: true }
+//       else return oldEntry
+//     })
+//   },
+//   [END_EDIT]: (state, { payload = {} }) => {
+//     const { i } = payload
+//     return state.map((oldEntry, index) => {
+//       if (index === i) return { entry: oldEntry.entry, editing: false }
+//       else return oldEntry
+//     })
+//   },
+//   [REMOVE_ENTRY]: (state, { payload = {} }) => {
+//     const { i } = payload
+//     return state.filter((e, index) => index != i)
+//   }
+// }, [])

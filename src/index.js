@@ -5,7 +5,6 @@ import { Router, browserHistory } from 'react-router'
 import createHistory from 'history/lib/createBrowserHistory'
 import createStore from './redux/configureStore'
 import routes from './routes'
-import './style.scss'
 
 const initData = {
   simpleList: [

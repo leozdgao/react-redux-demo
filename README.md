@@ -53,13 +53,24 @@
 
 - Container：承载大部分页面逻辑（state），完全掌控组件树的 render，并负责数据接入
 - Component：被动呈现，乖乖按照别人给的 props 来 render【介绍 functional component】
-- High Order Component：React 组件的 ES2015 式写法不再支持 Mixins后，社区总结的解决方案
+- High Order Component：React 组件的 ES2015 式写法不再支持 Mixins 后，社区总结的解决方案
 
-【展示一个例子（react-redux做了什么），通过 react-devtools 来展示】
+【继续展示 DEMO 0（react-redux做了什么， connect 方法），通过 react-devtools 来展示】
 
 #### Redux：以开发体验为出发点
 
 【DOME 1 开始演示，异步请求的问题，开始介绍 Redux 中间件，并解释 Redux 中的函数式编程思想】
+
+所谓的 Store Enhancer 指的是满足签名 `createStore => createStore'` 的函数，
+`applyMiddleware()` 就是一个 Store Enhancer
+
+```js
+// 优化点：
+// - cache 以及 expire
+// - 过时请求的dispose
+//
+// 定制一个中间件来处理
+```
 
 如果要让应用是可预测的，那么数据就需要统一在一起，于是只有一个 Store。Store 里包含的数据有：
 
@@ -162,6 +173,7 @@ Redux 带来的思考：应用框架（Framework）或是组件库（Library）�
 
 讲到这里 🤓，如果对这块依然有兴趣，你可以：
 
+- **务必认真阅读 [这篇文档](http://facebook.github.io/react/docs/reconciliation.html)**
 - 浏览 [React 的官方文档](http://facebook.github.io/react)
 - 在 Medium 上搜索关于 React 或 Redux 的文章
 - Github 上的 awesome 系列 [React](https://github.com/enaqx/awesome-react) [Redux](https://github.com/xgrommx/awesome-redux)
