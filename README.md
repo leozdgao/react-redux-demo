@@ -178,6 +178,12 @@ Redux 带来的思考：应用框架（Framework）或是组件库（Library）�
 - 在 Medium 上搜索关于 React 或 Redux 的文章
 - Github 上的 awesome 系列 [React](https://github.com/enaqx/awesome-react) [Redux](https://github.com/xgrommx/awesome-redux)
 
+我用的中间件：
+
+- [redux-combine-actions](https://github.com/itsmepetrov/redux-combine-actions)
+- [redux-promise](https://github.com/acdlite/redux-promise)
+- [redux-actions](https://github.com/acdlite/redux-actions)
+
 这里有一些资料：
 
 - ~~[React 中文文档（已脱更，v0.13.0）](http://reactjs.cn/react/index.html)~~
