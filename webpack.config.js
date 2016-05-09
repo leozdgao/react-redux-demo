@@ -8,11 +8,12 @@ const cssLoader = `style!css?importLoaders=1&sourceMap!autoprefixer?${browsers}`
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: {
+    vanilla: [ './bin/dev-client', './vanilla/index.js' ],
     app: [ './bin/dev-client', './src/index.js' ]
   },
   output: {
     path: path.resolve(__dirname, './dist/'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     publicPath: '/'
   },
   plugins: [
@@ -27,7 +28,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: path.join(__dirname, './src/index.html'),
-      inject: true
+      inject: false
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'vanilla.html',
+      template: path.join(__dirname, './vanilla/index.html'),
+      inject: false
     })
   ],
   resolve: {
